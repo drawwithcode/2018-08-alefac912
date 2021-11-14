@@ -25,7 +25,7 @@ function setup() {
   }
 
   // shake threshold setting
-  setShakeThreshold(2);
+  //setShakeThreshold();
 }
 
 function draw() {
@@ -36,7 +36,7 @@ function draw() {
   }
 }
 
-function deviceMoved() {
+function deviceShaken() {
   value += 1;
   if (value > 20) {
     n += 1;
