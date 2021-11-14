@@ -27,7 +27,7 @@ function setup() {
   }
 
   // shake threshold setting
-  //setShakeThreshold();
+  setShakeThreshold(2);
 }
 
 function draw() {
