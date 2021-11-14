@@ -16,8 +16,10 @@ function setup() {
   textAlign(CENTER, CENTER);
   //textFont("Patua One");
   textSize(48);
-  text("Say Hi to a Bear,", x, y - 32);
-  text("Shake your phone!", x, y + 32);
+  text("Say Hi to a Bear,", x, y - 64);
+  text("Shake your phone!", x, y);
+  textSize(24);
+  text("(or move your mouse)", x, y + 64);
 
   // frames array
   for (var i = 0; i < 45; i++) {
@@ -33,6 +35,17 @@ function draw() {
   if (value > 20) {
     imageMode(CENTER);
     image(frame[n], width / 2, height / 2);
+  }
+}
+
+function mouseMoved() {
+  value += 1;
+  var mod = value % 5
+  if (mod == 0) {
+    n += 1;
+  }
+  if (n > 44) {
+    n = 0;
   }
 }
 
