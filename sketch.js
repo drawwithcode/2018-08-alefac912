@@ -16,8 +16,8 @@ function setup() {
   textAlign(CENTER, CENTER);
   //textFont("Patua One");
   textSize(48);
-  text("Say Hi to a Bear!", x, y - 32);
-  text("Shake your phone gently!", x, y + 32);
+  text("Say Hi to a Bear,", x, y - 32);
+  text("Shake your phone!", x, y + 32);
 
   // frames array
   for (var i = 0; i < 45; i++) {
@@ -36,7 +36,7 @@ function draw() {
   }
 }
 
-function deviceShaken() {
+function deviceMoved() {
   value += 1;
   if (value > 20) {
     n += 1;
